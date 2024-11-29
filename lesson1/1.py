@@ -8,13 +8,17 @@ print(myName)
 pet_name = input("Lexi")
 print("Vash lubimchik - " + pet_name)
 
+
 def print_Python():
-    print("Учу Python!")
-          
+    print("Учу Python!")      
+
+
 print_Python()
+
 
 def print_letter(let):
     print(let, end='')
+
 
 print_letter('C')
 print_letter('т')
