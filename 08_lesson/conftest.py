@@ -4,7 +4,7 @@ from api import ProjectsAPI
 
 @pytest.fixture(scope="session")
 def api():
-    """Инициализация API клиента с токеном из переменных окружения."""
+    """Инициализация API клиента с токеном из переменных"""
     return ProjectsAPI()
 
 

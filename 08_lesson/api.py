@@ -9,7 +9,7 @@ load_dotenv()
 class ProjectsAPI:
 
     def __init__(self):
-        # Получаем BASE_URL и API_TOKEN из переменных окружения
+        # Получаем BASE_URL и API_TOKEN из переменных
         self.BASE_URL = os.getenv("BASE_URL")
         self.API_TOKEN = os.getenv("API_TOKEN")
 

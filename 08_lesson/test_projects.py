@@ -1,4 +1,4 @@
-# Позитивные тесты
+# Позитивные тесты.
 
 def test_create_project(api):
     valid_project_payload = {'title': 'Test Project'}
@@ -29,7 +29,7 @@ def test_update_project(api):
     assert response.status_code == 200, f"Expected 200, got {response.status_code}"
 
 
-# Негативные тесты
+# Негативные тесты.
 
 def test_create_project_missing_title(api):
     invalid_payload = {}
