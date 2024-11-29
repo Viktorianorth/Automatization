@@ -2,11 +2,13 @@ import pytest
 from selenium import webdriver
 from formpage import FormPage
 
+
 @pytest.fixture
 def driver():
     driver = webdriver.Chrome()
     yield driver
     driver.quit()
+
 
 def test_fill_form(driver):
     page = FormPage(driver)

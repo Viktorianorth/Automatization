@@ -2,10 +2,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+
 class CalculatorPage:
     def __init__(self, driver):
         self.driver = driver
-        self.result_locator = (By.CSS_SELECTOR, "#result")
+        self.result_locator = (By.CSS_SELECTOR, 'div.screen')
 
     def open(self):
         self.driver.get("https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html")
